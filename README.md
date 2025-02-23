@@ -111,7 +111,7 @@ we need to 'split' the string value stored in ``||variables:serialLineReceived||
 into the different parts of the command.
 
 Make a new variable called ``||variables:commandParts||``.
-Drag a ``||variables:set||`` ``||variables:commandParts||`` into ``||serial:serial on data received||` at the end.
+Drag a ``||variables:set||`` ``||variables:commandParts||`` into ``||serial:serial on data received||`` at the end.
 
 From the ``||text||`` menu grab a ``||text:split at||`` block, and drag it into this ``||variables:set||``.
 Set the first slot to ``||variables:serialLineReceived||``.
@@ -417,29 +417,3 @@ Download the zip file, extract it, and open index.html in Google Chrome. Read th
 file for instructions on how to use this web interface.  Note that it has only been tested to work
 in Google Chrome.  It uses the WebSerial API to communicate with the microbit, and not
 all browsers support that yet.
-
-
-
-> Open this page at [https://tgifford-usc.github.io/discolights2025/](https://tgifford-usc.github.io/discolights2025/)
-
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/tgifford-usc/discolights2025** and import
-
-## Edit this project
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/tgifford-usc/discolights2025** and click import
-
-#### Metadata (used for search, rendering)
-
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
